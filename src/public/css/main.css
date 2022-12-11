@@ -1,0 +1,56 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #163a07;
+    --Cbody: #798003;
+    --Cbackg: #b6be1e;
+    --Lcampo: #236806;
+    --primario: #ffc107;
+    --secundario: #faf037;
+    --fuente-principal:3.8rem;
+}
+
+body {
+    background: #809216;  /* fallback for old browsers */
+    /*background-image: -webkit-linear-gradient(to top, #DFE9F3 0%, var(--Cbackg)100%);*/
+    /*background-image: linear-gradient(to top, #DFE9F3 0%, var(--Cbackg)100%);*/
+    background: -webkit-linear-gradient(to right, #e1e782, #809216);  /*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e1e782, #809216); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    font-size: 16px;
+    font-family: century-gothic, sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+
+h1{
+    font-size: 3.8rem;
+    color: var(--oscuro);
+}
+
+h2{
+    font-size: 2.8rem;
+    color: var(--Cbody);
+}
+
+h3{
+    font-size: 2rem;
+    color: var(--Lcampo);
+    text-align: left;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h4{
+    text-align: justify;
+}
+
+.remove-bg{
+    filter: brightness (1.1);
+    mix-blend-mode : multiply;
+    }
