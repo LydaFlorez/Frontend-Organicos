@@ -27,13 +27,15 @@ router.post('/users/signup', (req, res) => {
     if(errors.length > 0) {
         res.render('users/signup', {errors, nombre, email, password, confirm_password});
     } else {
-        res.send('Usuario registrado.');
+        //res.send('Usuario registrado.');
+        res.render('users/registrado', {nombre, email, password, confirm_password});
+    
     }
     //console.log(req.body);
 });
 
 router.get('/users/logout', (req, res) => {
-    req.logout();
+    //req.logout();
     delete req.session
     res.redirect('/');
 })

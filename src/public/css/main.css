@@ -54,3 +54,7 @@ h4{
     filter: brightness (1.1);
     mix-blend-mode : multiply;
     }
+
+.c{
+   text-align: center;
+}  

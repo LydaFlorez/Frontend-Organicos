@@ -9,4 +9,7 @@ router.get('/about', (req, res) => {
     res.render('about.hbs');
 })
 
+router.get('/nuestrasrecetas', (req, res) => {
+    res.render('nuestrasrecetas.hbs');
+})
 module.exports = router;

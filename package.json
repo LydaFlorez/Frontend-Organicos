@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LydaFlorez/Backend-Organicos.git"
+    "url": "git+https://github.com/LydaFlorez/Frontend-Organicos.git"
   },
   "keywords": [
     "Limón",
@@ -37,25 +37,23 @@
     "remedios",
     "caseros"
   ],
-  "author": "Las Florez",
+  "author": "Limón lima tangelo lisa criolla reyna fruta Mandarina Citrus cítrico orgánico naranja venta producto orgánico libre químico recetas salud vitamina Rionegro Santander Colombia remedios caseros",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LydaFlorez/Backend-Organicos/issues"
+    "url": "https://github.com/LydaFlorez/Frontend-Organicos/issues"
   },
-  "homepage": "https://github.com/LydaFlorez/Backend-Organicos#readme",
+  "homepage": "https://github.com/LydaFlorez/Frontend-Organicos#readme",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.5",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
     "connect-flash": "^0.1.1",
-    "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "express-passport-logout": "^0.1.0",
     "express-session": "^1.17.3",
     "method-override": "^3.0.0",
     "mongoose": "^6.8.0",
-    "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
   },

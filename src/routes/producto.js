@@ -9,30 +9,30 @@ router.get('/producto/agregar', (req, res) => {
 router.post('/producto/new-producto', async (req, res) => {
     //let id = req.params.id;
     console.log(req.body);
-    const {palabra, tipo, significado} = req.body
+    const {producto, tipo, peso} = req.body
     const errors = [];
-    if(!palabra) {
-        errors.push({texto: 'Escriba una palabra.'});
+    if(!producto) {
+        errors.push({texto: 'Escriba un producto.'});
     }
     if(!tipo) {
         errors.push({texto: 'Escriba un tipo.'});
     }
-    if(!significado) {
-        errors.push({texto: 'Escriba un significado.'});
+    if(!peso) {
+        errors.push({texto: 'Escriba un peso en Kg.'});
     }
     if(errors.length > 0) {
         res.render('producto/new-producto', {
             errors,
-            palabra,
+            producto,
             tipo,
-            significado
+            peso
         });
     } else {
-        const newProducto = new Producto({palabra, tipo, significado});
+        const newProducto = new Producto({producto, tipo, peso});
         //console.log(newProducto)
         await newProducto.save();
         res.redirect('/producto');
-        //res.send('Palabra Guardada.');
+        //res.send('Producto Guardada.');
     }   
 })
 
@@ -49,8 +49,8 @@ router.get('/producto/edit/:id', async (req, res) => {
 });
 
 router.put('/producto/edit-producto/:id', async (req, res) => {
-    const {palabra, tipo, significado} = req.body;
-    await Producto.findByIdAndUpdate(req.params.id, {palabra, tipo, significado});
+    const {producto, tipo, peso} = req.body;
+    await Producto.findByIdAndUpdate(req.params.id, {producto, tipo, peso});
     res.redirect('/producto');
 });
 
